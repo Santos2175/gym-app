@@ -13,7 +13,7 @@ type Props = {
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
-  const flexBetween = 'flex items-center justify-between';
+  const flexBetween = 'flex items-center justify-between  max-w-[1960px]';
   const isAboveMediumScreens = useMediaQuery('(min-width:1060px)');
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const navbarBackground = isTopOfPage ? '' : 'bg-primary-100 drop-shadow';
@@ -54,7 +54,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 </div>
 
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  <p className='cursor-pointer transition duration-500 hover:text-primary-300'>
+                    Sign In
+                  </p>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a member
                   </ActionButton>
