@@ -24,6 +24,7 @@ A clean and responsive Gym App UI built to showcase modern frontend design and l
 - Fully responsive UI
 - Framer for animation
 - Docker for containerization
+- React hook form for form validation
 
 ---
 
@@ -33,6 +34,7 @@ A clean and responsive Gym App UI built to showcase modern frontend design and l
 - Language - Typescript
 - Build Tool - Vite
 - Styling - Tailwindcss
+- Contact form - React hook form
 
 ---
 
